@@ -15,10 +15,7 @@ jobs:
       - name: 構建 Docker 映像
         run: docker build -t hello-world-image .
 
-      - name: 停止並移除舊容器 (如果已存在)
-        run: |
-          docker stop hello-world-container || echo "容器不存在"
-          docker rm hello-world-container || echo "容器不存在"
+      
 
       - name: 啟動 Docker 容器
         run: |

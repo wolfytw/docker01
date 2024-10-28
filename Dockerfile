@@ -1,4 +1,4 @@
-# 使用簡單的 nginx 基礎映像
+# 使用簡單的 nginx 基礎映像 
 FROM nginx:alpine
 
 # 創建一個自訂的 index.html 
